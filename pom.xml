@@ -45,6 +45,9 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </repository>
         <repository>
             <id>release</id>
@@ -52,6 +55,9 @@
             <releases>
                 <enabled>true</enabled>
             </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
     </repositories>
     <dependencyManagement>
