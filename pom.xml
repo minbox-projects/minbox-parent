@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.minbox.framework</groupId>
         <artifactId>minbox-build</artifactId>
-        <version>1.0.0.RELEASE</version>
+        <version>1.0.1-SNAPSHOT</version>
         <relativePath/>
     </parent>
     <groupId>org.minbox.framework</groupId>
     <artifactId>minbox-parent</artifactId>
     <name>MinBox Parent</name>
-    <version>1.0.0.RELEASE</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>
         Parent dependency used to build components in "minbox projects"
@@ -26,10 +26,10 @@
         <developer>
             <id>hengboy</id>
             <name>恒宇少年 - 于起宇</name>
-            <email>jnyuqy@gmail.com</email>
+            <email>hengboy@minbox.org</email>
             <url>https://blog.yuqiyu.com</url>
             <organization>minbox-projects</organization>
-            <organizationUrl>https://gitee.com/minbox-projects</organizationUrl>
+            <organizationUrl>https://github.com/minbox-projects</organizationUrl>
         </developer>
     </developers>
     <licenses>
@@ -38,6 +38,22 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+    <repositories>
+        <repository>
+            <id>snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>release</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
     <dependencyManagement>
         <dependencies>
             <dependency>
