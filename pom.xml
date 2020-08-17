@@ -6,20 +6,20 @@
     <parent>
         <groupId>org.minbox.framework</groupId>
         <artifactId>minbox-build</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1.RELEASE</version>
         <relativePath/>
     </parent>
     <groupId>org.minbox.framework</groupId>
     <artifactId>minbox-parent</artifactId>
     <name>MinBox Parent</name>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1.RELEASE</version>
     <packaging>pom</packaging>
     <description>
         Parent dependency used to build components in "minbox projects"
     </description>
     <properties>
         <jdk.version>1.8</jdk.version>
-        <minbox-bom.version>1.0.1-SNAPSHOT</minbox-bom.version>
+        <minbox-bom.version>1.0.1.RELEASE</minbox-bom.version>
         <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
     </properties>
     <developers>
@@ -38,28 +38,6 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
-    <repositories>
-        <repository>
-            <id>snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-        <repository>
-            <id>release</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
     <dependencyManagement>
         <dependencies>
             <dependency>
