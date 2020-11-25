@@ -20,6 +20,7 @@
     <properties>
         <jdk.version>1.8</jdk.version>
         <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+        <minbox-bom.version>1.0.5-SNAPSHOT</minbox-bom.version>
     </properties>
     <developers>
         <developer>
