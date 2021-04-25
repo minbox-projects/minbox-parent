@@ -12,7 +12,7 @@
     <groupId>org.minbox.framework</groupId>
     <artifactId>minbox-parent</artifactId>
     <name>MinBox Parent</name>
-    <version>1.0.5</version>
+    <version>1.0.6-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>
         Parent dependency used to build components in "minbox projects"
@@ -21,6 +21,7 @@
         <jdk.version>1.8</jdk.version>
         <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
         <minbox-bom.version>1.0.5</minbox-bom.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     </properties>
     <developers>
         <developer>
@@ -38,11 +39,23 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.minbox.framework</groupId>
+                <artifactId>minbox-bom</artifactId>
+                <version>${minbox-bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
