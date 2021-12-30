@@ -12,7 +12,7 @@
     <groupId>org.minbox.framework</groupId>
     <artifactId>minbox-parent</artifactId>
     <name>MinBox Parent</name>
-    <version>1.0.7-SNAPSHOT</version>
+    <version>1.0.7</version>
     <packaging>pom</packaging>
     <description>
         Parent dependency used to build components in "minbox projects"
@@ -20,7 +20,7 @@
     <properties>
         <jdk.version>1.8</jdk.version>
         <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
-        <minbox-bom.version>1.0.7-SNAPSHOT</minbox-bom.version>
+        <minbox-bom.version>1.0.7</minbox-bom.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     </properties>
     <developers>
